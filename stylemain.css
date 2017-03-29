@@ -1,0 +1,606 @@
+body {
+    margin: 0;
+}
+
+
+/*Стили header*/
+
+.header {
+    flex-grow: 2;
+    /* background-image: url('img/header.jpg');
+    background-size: cover;
+    box-shadow: 0 0 35px 10px #7E1010;*/
+    background: rgba(139, 0, 0, 0.2);
+}
+
+.main_header {
+    display: flex;
+    padding: 20px;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.logotip {
+    display: flex;
+}
+
+.kartinka {
+    flex-grow: 1;
+    padding: 0px;
+}
+
+.kartinka img {
+    padding: 0px;
+}
+
+.caption {
+    flex-grow: 4;
+    margin-left: 5px;
+    display: table-cell;
+    vertical-align: middle;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+}
+
+.nav {
+    flex-grow: 3;
+    text-align: right;
+    padding-right: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.nav>ul {
+    margin: 0px;
+    padding-top: 6px;
+}
+
+.sub-menu {
+    padding: 0px;
+    text-align: left;
+    width: 420px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.sub-menu li {
+    padding-top: 10px;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+.menu>li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    padding: 10px;
+    border-right: 2px solid #B64607;
+    width: 80px;
+    text-align: center;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+.menu>li:last-child {
+    border-right: 0;
+}
+
+.menu .sub-menu {
+    position: absolute;
+    display: none;
+    list-style: none;
+}
+
+.menu>li:hover .sub-menu {
+    display: block;
+}
+
+.menu a {
+    color: #edb33e;
+    text-decoration: none;
+    line-height: 28px;
+}
+
+.menu a:hover {
+    transition: 0.5s ease;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+.foto a {
+    color: #edb33e;
+    text-decoration: none;
+}
+
+
+/*Стили content*/
+
+.main {
+    background-image: url('img/header.jpg');
+    background-size: cover;
+}
+
+.main,
+.main_content {
+    display: flex;
+    flex-direction: column;
+    /*background-color: #3d0909;*/
+    color: #edb33e;
+    font-size: 20px;
+}
+
+.main_content {
+    padding: 20px;
+}
+
+.main_content p {
+    font-size: 2rem;
+}
+
+.img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img img {
+    width: 350px;
+    height: 350px;
+    border-radius: 350px;
+    padding: 0;
+    box-shadow: 0 0 35px 25px #390909;
+}
+
+.img img:hover {
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);
+    transition: 0.8s ease;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+}
+
+.one p:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+    transition: 0.8s ease;
+}
+
+.two p:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+    transition: 0.8s ease;
+}
+
+.promo {
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.content {
+    flex-grow: 6;
+    margin: 50px 100px 50px 100px;
+}
+
+.booking_main {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking_texas {
+    width: 960px;
+    height: 315px;
+    background-image: url('img/texas_back.jpg');
+    margin: 50px auto;
+    box-shadow: 0 0 35px 10px #390909;
+}
+
+.booking_lambs {
+    width: 960px;
+    height: 315px;
+    background-image: url('img/lector_back.jpg');
+    margin: auto;
+    box-shadow: 0 0 35px 10px #390909;
+}
+
+.booking {
+    display: flex;
+    justify-content: center;
+}
+
+.booking_main form>p {
+    width: 250px;
+    margin: 0;
+}
+
+.booking_main form p,
+input {
+    display: inline-block;
+}
+
+.booking_main input,
+select {
+    border: 1px solid #edb33e;
+    background-color: rgba(113, 4, 4, 0.5);
+}
+
+.booking_main input:hover {
+    background-color: #8F0505;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7);
+}
+
+.booking_main select {
+    width: 171px;
+    padding: 0;
+    color: #edb33e;
+}
+
+.booking_main input[type="date"] {
+    width: 169px;
+    padding: 0;
+    margin-left: -5px;
+    color: #edb33e;
+}
+
+.booking_main input[type="submit"] {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 250px;
+    height: 30px;
+    color: #7E0404;
+    background-color: #edb33e;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    border: 1px;
+}
+
+.booking_main input[type="submit"]:hover {
+    background-color: #f7c96c;
+}
+
+.booking_main .move {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.booking_texas form {
+    float: left;
+    margin: 10px;
+}
+
+.booking_lambs form {
+    float: right;
+    margin: 10px;
+}
+
+
+/*Форма техас и молчание*/
+
+form>p {
+    width: 250px;
+    margin: 0;
+}
+
+form p,
+input {
+    display: inline-block;
+}
+
+input {
+    border: 1px solid #edb33e;
+    background-color: #710404;
+}
+
+input:hover {
+    background-color: #8F0505;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7);
+}
+
+select {
+    width: 171px;
+    padding: 0;
+    color: #edb33e;
+}
+
+input[type="date"] {
+    width: 169px;
+    padding: 0;
+    margin-left: -5px;
+    color: #edb33e;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 250px;
+    height: 30px;
+    color: #7E0404;
+    background-color: #edb33e;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    border: 1px;
+}
+
+input[type="submit"]:hover {
+    background-color: #f7c96c;
+}
+
+.move {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+/*Стили footer*/
+
+.footer {
+    margin: auto;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.footer div {
+    padding-right: 50px;
+    display: inline-block;
+}
+
+.footer img {
+    float: right;
+    margin-left: 5px;
+}
+
+
+/*ТЕХАС*/
+
+.content_tex {
+    position: relative;
+}
+
+.content_two_three img {
+    box-shadow: 0 0 35px 10px #390909;
+}
+
+.lector_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    margin-left: -120px;
+    /*float: left;*/
+    box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    animation: play 10s linear infinite alternate, shadow 2s linear infinite alternate;
+    animation-play-state: running;
+}
+
+.lector_img:hover {
+    margin-left: 0px;
+    animation-play-state: paused;
+}
+
+@keyframes play {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 90%;
+        left: 0;
+    }
+}
+
+@keyframes shadow {
+    50% {
+        /*box-shadow: 0 -1px rgba(255, 255, 255, .3), 0 0 5px #000, 0 0 8px #000;*/
+        box-shadow: 20px 0px 20px rgba(0, 0, 0, 1);
+    }
+}
+
+.content_texas {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+}
+
+.line div {
+    margin-left: 45px;
+}
+
+.line div:first-of-type {
+    margin-left: 0px;
+}
+
+.line img {
+    float: left;
+    margin-right: 5px;
+}
+
+.line div div {
+    margin: 0;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.content_one {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.content_one p {
+    width: 360px;
+}
+
+.content_two {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.content_two_one {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.content_two_one img {
+    margin-right: 20px;
+}
+
+.content_two_two {
+    margin-bottom: 50px;
+}
+
+.content_two_three {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*АКЦИИ*/
+
+.content_action {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px 50px 100px;
+}
+
+.content_action img {
+    margin: 20px;
+    box-shadow: 0 0 35px 10px #390909;
+}
+
+.desc {
+    display: none;
+}
+
+.one_one:hover .desc {
+    display: block;
+}
+
+.one_two:hover .desc {
+    display: block;
+}
+
+.two_one:hover .desc {
+    display: block;
+}
+
+.two_two:hover .desc {
+    display: block;
+}
+
+.one_action,
+.two_action {
+    display: flex;
+    justify-content: space-around;
+}
+
+.one_action p {
+    text-align: center;
+    margin: 0;
+}
+
+.two_action p {
+    text-align: center;
+    margin: 0;
+}
+
+.one_one,
+.one_two,
+.two_one,
+.two_two {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+
+.three_action {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    margin: auto;
+    text-align: justify;
+}
+
+
+/*КОНТАКТЫ*/
+
+.content_contacts {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.contacts_main {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.contacts_main div {
+    width: 360px;
+    text-align: justify;
+}
+
+.contacts_main p {
+    text-align: center;
+}
+
+.map,
+.address,
+.shema {
+    display: flex;
+    justify-content: space-around;
+}
+
+.shema {
+    margin-top: 50px;
+    box-shadow: 0 0 35px 10px #390909;
+}
+
+
+/*ОТЗЫВЫ*/
+
+.content_reviews {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px 50px 100px;
+}
+
+.content_reviews div {
+    margin-bottom: 50px;
+}
+
+.one_reviews,
+.two_reviews,
+.three_rewiews {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.content_reviews img {
+    margin-right: 50px;
+    box-shadow: 0 0 35px 10px #390909;
+}

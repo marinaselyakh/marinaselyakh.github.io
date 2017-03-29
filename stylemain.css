@@ -576,6 +576,9 @@ h1 {
 
 .shema {
     margin-top: 50px;
+}
+
+.shema img {
     box-shadow: 0 0 35px 10px #390909;
 }
 
